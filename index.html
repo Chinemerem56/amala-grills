@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#721c24">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Amala Palace">
+    <title>Amala Palace & Grills | Student Hub</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="amala.png">
+    <link rel="apple-touch-icon" href="amala.png">
+    <!-- This links your HTML to your custom CSS style file -->
+    <link rel="stylesheet" href="amala.css">
+</head>
+<body>
+
+    <!-- 1. CAMPUS NAVIGATION HUB -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo-area">
+                <img src="amala.png" alt="Amala Palace Logo" class="logo-img">
+                <span class="brand-name">Amala Palace & Grills</span>
+            </div>
+            <a href="#menu-section" class="nav-cta-btn">View Menu</a>
+        </div>
+    </nav>
+
+    <!-- 2. HIGH-ENERGY STUDENT HERO BANNER -->
+    <header class="hero-banner">
+        <div class="hero-container">
+            <span class="hero-badge">Premium Taste x Student Budgets</span>
+            <h1 class="hero-title">Hot, Steaming Amala Delivered Straight to Campus!</h1>
+            <p class="hero-subtitle">No pricing stress, just pure vibes. Pick your favorite combo below, check the live pot queue, and finalize your order directly on WhatsApp.</p>
+            <div class="hero-actions">
+                <a href="#menu-section" class="btn-primary">Explore Menu</a>
+                <a href="#queue-tracker" class="btn-secondary">Check Live Queue Line</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. VISUAL PROGRESS TRACKER LINE -->
+    <section id="queue-tracker" class="tracker-section">
+        <div class="tracker-card">
+            <div class="tracker-header">
+                <div>
+                    <h2 class="tracker-title">
+                        <span class="live-pulse-dot"></span>
+                        Live Kitchen Queue Status
+                    </h2>
+                    <p class="tracker-subtitle">Real-time update from the main pots</p>
+                </div>
+                <div class="wait-time-badge">
+                    Est. Wait Time: <span class="wait-minutes">12-15 Mins</span>
+                </div>
+            </div>
+
+            <!-- The Visual Moving Line Layout -->
+            <div class="progress-line-wrapper">
+                <div class="progress-bg-line"></div>
+                <div class="progress-fill-line"></div>
+
+                <!-- Step 1 -->
+                <div class="progress-step">
+                    <div class="step-icon checked">✓</div>
+                    <span class="step-label text-dark">Order Placed</span>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="progress-step">
+                    <div class="step-icon active-bounce">🍲</div>
+                    <span class="step-label text-wine">Pounding / Turning</span>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="progress-step">
+                    <div class="step-icon locked">3</div>
+                    <span class="step-label text-muted">Packaging</span>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="progress-step">
+                    <div class="step-icon locked">🚴</div>
+                    <span class="step-label text-muted">Dispatched</span>
+                </div>
+            </div>
+            <p class="tracker-footnote">Queue position updates instantly as our kitchen team processes orders via WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- 4. POCKET-FRIENDLY COMBO MENU SECTION -->
+    <section id="menu-section" class="menu-section">
+        <div class="section-heading">
+            <h2>The Palace Student Combos</h2>
+            <p>Pick your pack below. Tap to transfer your selection to WhatsApp for payment & quick delivery!</p>
+        </div>
+
+        <div class="menu-grid">
+            <article class="food-card">
+                <div class="image-box">
+                    <img src="images-1.png" alt="The Mini Semester Pack">
+                    <span class="card-badge bg-gold-badge">Student Favorite</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="food-title">The Mini Semester Pack</h3>
+                    <p class="food-description">Two soft wraps of premium fluffy Amala served with clean Ewedu, spicy Gbegiri, and 2 thick pieces of assorted meat.</p>
+                    <button class="add-cart-btn" data-product="The Mini Semester Pack">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="The Mega Supreme Combo">
+                    <span class="card-badge bg-wine-badge">Best Value</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="food-title">The Mega Supreme Combo</h3>
+                    <p class="food-description">Three large wraps of Amala, rich multi-layered soup mix, Ogunfe (goat meat), sweet Kpomo, Shaki, and a chilled soft drink.</p>
+                    <button class="add-cart-btn" data-product="The Mega Supreme Combo">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=900&q=80" alt="Asun & Peppered Grills Box">
+                    <span class="card-badge bg-orange-badge">Hot Grill</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="food-title">Asun & Peppered Grills Box</h3>
+                    <p class="food-description">Spicy, smoky diced goat meat grilled with fresh local peppers, served alongside a side portion of fried plantain slices.</p>
+                    <button class="add-cart-btn" data-product="Asun & Peppered Grills Box">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80" alt="Plantain Combo">
+                    <span class="card-badge bg-gold-badge">Campus Classic</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="food-title">Plantain & Pepper Sauce Box</h3>
+                    <p class="food-description">Golden fried plantain with a hot and tasty pepper sauce mix and a side of juicy grilled chicken.</p>
+                    <button class="add-cart-btn" data-product="Plantain & Pepper Sauce Box">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Soup & Sides Mix">
+                    <span class="card-badge bg-wine-badge">Fresh Pot</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="food-title">Soup & Sides Mix</h3>
+                    <p class="food-description">A rich bowl of soup, soft swallow, and crunchy sides for students who want a full, satisfying meal.</p>
+                    <button class="add-cart-btn" data-product="Soup & Sides Mix">Add to cart</button>
+                </div>
+            </article>
+
+            <article class="food-card">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80" alt="Fresh Grill Feast">
+                    <span class="card-badge bg-orange-badge">Chef Special</span>
+                </div>
+                <div class="card-body">
+                    <h3 class="food-title">Fresh Grill Feast</h3>
+                    <p class="food-description">A hot mix of grilled proteins, two side dishes, and a colorful local weekend platter.</p>
+                    <button class="add-cart-btn" data-product="Fresh Grill Feast">Add to cart</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <aside class="order-panel" id="orderPanel" aria-live="polite">
+        <div class="order-panel-header">
+            <div>
+                <span class="panel-kicker">Your order</span>
+                <h3>Selected items</h3>
+            </div>
+            <button class="close-panel" id="closePanel" type="button" aria-label="Close order panel">×</button>
+        </div>
+        <div id="orderList" class="order-list">
+            <p class="empty-order">No item selected yet.</p>
+        </div>
+        <button class="green-whatsapp-btn" id="panelWhatsAppBtn" type="button">Order on WhatsApp</button>
+    </aside>
+
+    <div class="floating-cart" id="cartSummary" aria-live="polite">
+        <div class="cart-left">
+            <button class="whatsapp-mini-btn" id="whatsappBtn" type="button" aria-label="Open order WhatsApp">💬</button>
+            <div class="cart-copy">
+                <span>My cart</span>
+                <strong id="cartItemsText">0 items</strong>
+            </div>
+        </div>
+    </div>
+
+    <button class="direct-whatsapp-fab" id="directWhatsAppBtn" type="button" aria-label="Chat the owner on WhatsApp">💬</button>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Amala Palace and Grills. Simply delicious.</p>
+    </footer>
+
+    <script src="amala.js"></script>
+</body>
+</html>

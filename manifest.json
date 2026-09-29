@@ -1,0 +1,17 @@
+{
+  "name": "Amala Palace & Grills",
+  "short_name": "Amala Palace",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fbfbf9",
+  "theme_color": "#721c24",
+  "description": "Amala Palace & Grills student food ordering hub",
+  "icons": [
+    {
+      "src": "amala.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
